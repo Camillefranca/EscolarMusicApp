@@ -35,15 +35,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnMatricular = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMatricula)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvMatricula
             // 
+            this.dgvMatricula.AllowUserToAddRows = false;
+            this.dgvMatricula.AllowUserToDeleteRows = false;
             this.dgvMatricula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMatricula.Location = new System.Drawing.Point(45, 116);
+            this.dgvMatricula.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4});
+            this.dgvMatricula.Location = new System.Drawing.Point(45, 90);
             this.dgvMatricula.Name = "dgvMatricula";
-            this.dgvMatricula.Size = new System.Drawing.Size(454, 150);
+            this.dgvMatricula.ReadOnly = true;
+            this.dgvMatricula.Size = new System.Drawing.Size(493, 150);
             this.dgvMatricula.TabIndex = 0;
             this.dgvMatricula.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -93,7 +105,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(654, 243);
+            this.button5.Location = new System.Drawing.Point(550, 242);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 32;
@@ -101,11 +113,43 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // Column1
+            // 
+            this.Column1.Frozen = true;
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 50;
+            // 
+            // Column2
+            // 
+            this.Column2.Frozen = true;
+            this.Column2.HeaderText = "Aluno";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.Frozen = true;
+            this.Column3.HeaderText = "Curso";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.Frozen = true;
+            this.Column4.HeaderText = "Data";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            this.Column4.Width = 104;
+            // 
             // FrmMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 277);
+            this.ClientSize = new System.Drawing.Size(637, 277);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnMatricular);
             this.Controls.Add(this.label2);
@@ -132,5 +176,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnMatricular;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }

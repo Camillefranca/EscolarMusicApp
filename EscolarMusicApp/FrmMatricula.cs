@@ -37,23 +37,23 @@ namespace EscolarMusicApp
             cmbCurso.DisplayMember = "Nome";
             cmbCurso.ValueMember = "Id";
 
-            //// preenche o datagrid com os dados das matrículas ativas ()
-            //dgvMatricula.Rows.Clear();
-            //Matricula matricula = new Matricula();
-            //DataTable dt = new DataTable();
-            ////dt.Load(matricula.ListarAtivas());
-            ////dgvMatricula.DataSource = dt;
-            //var dr = matricula.ListarAtivas();
-            //int i = 0;
-            //while (dr.Read())
-            //{
-            //    dgvMatricula.Rows.Add();
-            //    dgvMatricula.Rows[i].Cells[0].Value = dr.GetValue(0);
-            //    dgvMatricula.Rows[i].Cells[1].Value = dr.GetValue(1);
-            //    dgvMatricula.Rows[i].Cells[2].Value = dr.GetValue(2);
-            //    dgvMatricula.Rows[i].Cells[3].Value = dr.GetValue(3);
-            //    i++;
-            //}
+            // preenche o datagrid com os dados das matrículas ativas ()
+            dgvMatricula.Rows.Clear();
+            Matricula matricula = new Matricula();
+            DataTable dt = new DataTable();
+            //dt.Load(matricula.ListarAtivas());
+            //dgvMatricula.DataSource = dt;
+            var dr = matricula.ListarAtivas();
+            int i = 0;
+            while (dr.Read())
+            {
+                dgvMatricula.Rows.Add();
+                dgvMatricula.Rows[i].Cells[0].Value = dr.GetValue(0);
+                dgvMatricula.Rows[i].Cells[1].Value = dr.GetValue(1);
+                dgvMatricula.Rows[i].Cells[2].Value = dr.GetValue(2);
+                dgvMatricula.Rows[i].Cells[3].Value = dr.GetValue(3);
+                i++;
+            }
         }
 
         private void btnMatricular_Click(object sender, EventArgs e)
@@ -69,6 +69,11 @@ namespace EscolarMusicApp
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

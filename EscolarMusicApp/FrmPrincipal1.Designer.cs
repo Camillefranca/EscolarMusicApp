@@ -37,12 +37,11 @@
             this.operaçõesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.matrículaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.relatóriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuárioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.matrículaToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,18 +118,10 @@
             this.alunoToolStripMenuItem,
             this.professorToolStripMenuItem,
             this.usuárioToolStripMenuItem,
-            this.cursoToolStripMenuItem,
-            this.matrículaToolStripMenuItem1});
+            this.cursoToolStripMenuItem});
             this.relatóriosToolStripMenuItem.Name = "relatóriosToolStripMenuItem";
             this.relatóriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.relatóriosToolStripMenuItem.Text = "Relatórios";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
-            this.sairToolStripMenuItem.Text = "&Sair";
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // alunoToolStripMenuItem
             // 
@@ -160,11 +151,12 @@
             this.cursoToolStripMenuItem.Text = "&Curso";
             this.cursoToolStripMenuItem.Click += new System.EventHandler(this.cursoToolStripMenuItem_Click);
             // 
-            // matrículaToolStripMenuItem1
+            // sairToolStripMenuItem
             // 
-            this.matrículaToolStripMenuItem1.Name = "matrículaToolStripMenuItem1";
-            this.matrículaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.matrículaToolStripMenuItem1.Text = "&Matrícula";
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
+            this.sairToolStripMenuItem.Text = "&Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
             // FrmPrincipal1
             // 
@@ -202,6 +194,5 @@
         private System.Windows.Forms.ToolStripMenuItem professorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuárioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cursoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem matrículaToolStripMenuItem1;
     }
 }
